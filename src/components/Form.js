@@ -38,7 +38,7 @@ function Form({setInputText, inputText, todos, setTodos}){
                 
             </select>
             </form>
-            <Todolist todos={todos} setInputText={setInputText} />
+            <Todolist todos={todos} setInputText={setInputText} setTodos={setTodos} />
             </div>
             
             </div>

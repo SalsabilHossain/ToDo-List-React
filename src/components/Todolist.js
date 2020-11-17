@@ -4,13 +4,13 @@ import ToDo from './ToDo';
 import Form from './Form'
 
 
-function Todolist({todos}){
+function Todolist({todos, setTodos}){
     
     return(
     <div className="todo container">
         <ul className="to-do list">
             {todos.map(todo => (
-                <ToDo text={todo.text}/>
+                    <ToDo todo={todo} setTodos={setTodos} todos={todos} key={todo.id} text={todo.text}/>
 
 
             ))}

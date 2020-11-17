@@ -3,18 +3,40 @@ import './ToDo.css'
 import Todolist from './Todolist'
 
 
-const ToDo = ({text}) => {
+const ToDo = ({text, todo, todos, setTodos}) => {
+    const deleteHandler = () => {
+        setTodos(todos.filter((el) => el.id !==todo.id));
+        
+        
+
+    };
+    const check = () => {
+        setTodos(todos.map(item => {
+            if(item.id === todo.id){
+                return{
+
+                ...item, completed: !item.completed
+                };
+            }
+            return item;
+        })
+        );
+    };
+   
+
+
+
     return(
         
     <div className='todo'>
-    <input type="checkbox"></input>
+    <input type="checkbox" onChange={check}/>
 
-    <li className="todo-item">
+    <li className={`todo-item ${todo.completed ? "completed" : ''}`}>
             {text}
                 
     </li>
            
-    <button className="trash-btn"><i className="fas fa-trash"></i></button>
+    <button onClick={deleteHandler} className="trash-btn"><i className="fas fa-trash"></i></button>
             
     </div>
         

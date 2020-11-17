@@ -12,3 +12,9 @@ header{
 html {
     font-family: Roboto, sans-serif;
 }
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+    color: green;
+}

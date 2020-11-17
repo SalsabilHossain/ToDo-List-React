@@ -56,4 +56,22 @@ input[type=text]{
     background-color: white;
   }
 
- 
+  @media (max-width: 960px) {
+    .imgback {
+      display: none;
+    }
+
+    .form{
+        flex: 12;
+    }
+
+    Form button{
+        flex: 2;
+        text-align: center;
+        
+    }
+
+    select{
+        display: none;
+    }
+  }
