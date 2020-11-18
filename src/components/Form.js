@@ -31,14 +31,15 @@ function Form({setInputText, inputText, todos, setTodos}){
             <input value={inputText} onChange={inputTextHandler} type="text" name="name" />
             </label>
             <button onClick={submitTodoHandler}>Add</button>
-            <select>
-                <option value="0">All</option>
-                <option value="1">Completed</option>
-                <option value="2">Incomplete</option>
-                
-            </select>
+            
+            
+            
             </form>
-            <Todolist todos={todos} setInputText={setInputText} setTodos={setTodos} />
+            <div className="list"><Todolist todos={todos} setInputText={setInputText} setTodos={setTodos} /></div>
+            
+            
+            
+
             </div>
             
             </div>

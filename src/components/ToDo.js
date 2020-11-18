@@ -29,9 +29,11 @@ const ToDo = ({text, todo, todos, setTodos}) => {
     return(
         
     <div className='todo'>
+
     <input type="checkbox" onChange={check}/>
 
     <li className={`todo-item ${todo.completed ? "completed" : ''}`}>
+    
             {text}
                 
     </li>
