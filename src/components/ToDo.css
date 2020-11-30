@@ -29,21 +29,39 @@ pointer-events: none;
 .todo {
     margin: 0.5rem;
     font-size: 1.5rem;
-    color: black;
+    color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     transition: all 1s ease;
+    color: #ebeb00;
+    
+    
+    
     
     
   }
   
   .todo li{
       list-style: none;
-      margin: 20px;
-      display: flex;
+      
+      
+      
       
       
   }
 
- 
+  label{
+    color: ghostwhite;
+  }
+
+  @media (max-width: 800px) {
+    .todo {
+      
+    }
+
+    todo li{
+      width: 100%
+      
+    }
+  }

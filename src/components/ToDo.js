@@ -3,7 +3,11 @@ import './ToDo.css'
 import Todolist from './Todolist'
 
 
-const ToDo = ({text, todo, todos, setTodos}) => {
+const ToDo = ({text, todo, todos, setTodos, select, setselect}) => {
+    
+
+
+
     const deleteHandler = () => {
         setTodos(todos.filter((el) => el.id !==todo.id));
         
@@ -34,11 +38,12 @@ const ToDo = ({text, todo, todos, setTodos}) => {
 
     <li className={`todo-item ${todo.completed ? "completed" : ''}`}>
     
-            {text}
+            {text}. <label>Priority: {select}</label>
                 
     </li>
            
     <button onClick={deleteHandler} className="trash-btn"><i className="fas fa-trash"></i></button>
+    
             
     </div>
         

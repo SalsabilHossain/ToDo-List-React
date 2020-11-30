@@ -6,7 +6,9 @@
 }
 
 body{
-    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    background-color: #282828;
+    padding: 0;
+    margin: 0;
 }
 
 
