@@ -19,7 +19,7 @@ const ToDo = ({text, todo, todos, setTodos, select, setselect}) => {
             if(item.id === todo.id){
                 return{
 
-                ...item, completed: !item.completed
+                ...item, completed: !item.completed, select: 10
                  
                 };
             }
