@@ -67,7 +67,7 @@ Form Button{
 }
 
 Form Button:hover{
-    opacity: 0.;
+    opacity: 0.5;
 }
 
 input[type=text]{

@@ -26,9 +26,6 @@ function Todolist({todos, setTodos, select, setselect}){
     </div>);
 };
 
-const priority = {
-    completePriority: 10,
-    
-  };
+
 
 export default Todolist;

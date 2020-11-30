@@ -14,12 +14,13 @@ const ToDo = ({text, todo, todos, setTodos, select, setselect}) => {
         
 
     };
-    const check = () => {
+    const check = (select) => {
         setTodos(todos.map(item => {
             if(item.id === todo.id){
                 return{
 
                 ...item, completed: !item.completed
+                 
                 };
             }
             return item;
